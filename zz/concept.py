@@ -7,3 +7,4 @@ a,b,c= [int(x) for x in input().split()]#list comprehension, "a244.py"的另一�
 
 result=map(int, input().split()) 
 print(list(result))
+print(list(result))
