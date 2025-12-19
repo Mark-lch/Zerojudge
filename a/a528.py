@@ -1,26 +1,18 @@
 while True:
     try:
         a=0
-        L=[]
+        Ln,L=[],[]
         N=int(input())
         while a<N:
-            L=input()
+            L.append(int(input()))
+           # if int(L[a])>0:
+           #     Ln.append((len(L)))
+           # else:
+           #     Ln.append((-len(L)))
             a+=1
-            print(L)
-        #Ln=
-        print(Ln)
-        
-        
-            
-
-
-
-
-
-
-
-
-
-
+           # print(Ln)
+        L.sort()
+        for b in range(len(L)):
+            print(L[b])
     except EOFError:
         break
