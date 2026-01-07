@@ -14,5 +14,4 @@ for per in lst:
             stack.append(n1*n2)
         else:
             stack.append(n1//n2)
-    
     print(n2,per,n1)
