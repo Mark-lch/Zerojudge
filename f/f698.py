@@ -1,17 +1,24 @@
-lst=input().split()
-stack=[]
-for per in lst:
-    if per.isalnum():
-        stack.append(per)
-    else:
-        n2=int(stack.pop())
-        n1=int(stack.pop())
-        if per=="-":
-            stack.append(n1-n2)
-        elif per=="+":
-            stack.append(n1+n2)
-        elif per=="*":
-            stack.append(n1*n2)
+def process():
+    RS=[]
+    for per in lst:
+        if per not in ["+","-","*","/"]:
+            RS.append(per)
         else:
-            stack.append(n1//n2)
-    print(n2,per,n1)
+            n2=int(RS.pop())
+            n1=int(RS.pop())
+            if per=="-":
+                RS.append(n1-n2)
+            elif per=="+":
+                RS.append(n1+n2)
+            elif per=="*":
+                RS.append(n1*n2)
+            else:
+                RS.append(n1//n2)
+    return(RS)
+
+while True:
+    try:
+        lst=input().split()
+        print(*process())
+    except EOFError:
+        break
