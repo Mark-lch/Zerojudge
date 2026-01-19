@@ -13,6 +13,7 @@ def postfix():
                 rs.append(tem.pop())
             else:
                 tem.pop()
+                
         elif per in["+","-","*","/"] :
 
             while per in ["+","-"] and tem and (tem[-1]!="(") :
