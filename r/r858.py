@@ -1,0 +1,12 @@
+N=int(input())
+data=list(map(int,input().split()))
+G=data.count(0)
+A=data.count(1)
+B=data.count(2)
+C=data.count(3)
+D=data.count(4)
+E=data.count(5)
+
+discount=min(N-G,G)
+price=((G-discount)*50)+((N-G-discount)*20)+(59*discount)
+print(G,A,B,C,D,E,price)
