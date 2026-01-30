@@ -1,8 +1,6 @@
 
-S=input("輸入字串:") 
+S=input() 
 
-k=int(input("輸入操作數:") )
+k=int(input())
 print(S)
 print(k)
-
-
