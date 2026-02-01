@@ -54,20 +54,20 @@ def calculate():
                 print(RESULT)
             return
 
-
-def change(D:list):
+# def change(D:list):
     
-    dic = {"M":1000, "CM": 900, "D": 500, "CD": 400, "C": 100, "XC": 90, "L": 50, "XL": 40, "X": 10, "IX": 9, "V": 5, "IV": 4, "I": 1} 
-    for d in D:
-        if d == "ZERO":
-            print(d)
-            continue
-        Result=""
-        for k,v in dic.items():
-            while (d-v)>=0:
-                d-=v
-                Result+=k
-        print(Result)
+#     dic = {"M":1000, "CM": 900, "D": 500, "CD": 400, "C": 100, "XC": 90, "L": 50, "XL": 40, "X": 10, "IX": 9, "V": 5, "IV": 4, "I": 1} 
+#     for d in D:
+#         if d == "ZERO":
+#             print(d)
+#             continue
+#         Result=""
+#         for k,v in dic.items():
+#             while (d-v)>=0:
+#                 d-=v
+#                 Result+=k
+#         print(Result)
         
 #change(calculate())
+
 calculate()
