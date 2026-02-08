@@ -1,23 +1,26 @@
-N=int(input())
+data=int(input())
 LList=[]
 d=2
-while d*d<=N:
-    while N%d==0:
-        N=N//d
+
+while d*d<=data:
+    while data%d==0:
+        data//=d
         LList.append(d)
     d+=1
-if N>1:
-     LList.append(N)
+if data>1:
+    LList.append(data)
+
 
 if len(LList)==1:
     print(LList[0])
 else:
     LL=sorted(list(set(LList)))
     for c in range(len(LL)):
-        if LList.count(LL[c])>1:
-            LL[c]=f"{LL[c]}^{LList.count(LL[c])}"
+        time=LList.count(LL[c])
+        if time>1:
+            LL[c]=f"{LL[c]}^{time}"
 
-    print(" * ".join(str(a) for a in LL))
+    print(" * ".join(str(n) for n in LL ))
 
 
 """一開始寫的錯誤的"""
