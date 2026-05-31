@@ -10,12 +10,11 @@ int main(){
         if(array[a]){
             for(int i=a*a;i<=N;i+=a){
                 array[i]=false;
+            }
         }
     }
-    }
-    for(int isprime=2;isprime<N;isprime++){
+    for(int isprime=2;isprime<=N;isprime++){
         if(array[isprime])
             cout<<isprime<<" ";
     }
-
 }
